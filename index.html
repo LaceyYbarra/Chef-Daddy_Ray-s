@@ -3,35 +3,105 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chef Daddy Ray's</title>
+<style>
+body{margin:0;font-family:Arial;background:#061226;color:white}
+a{text-decoration:none;color:inherit}
+.hero{text-align:center;padding:50px 20px;background:#081a3a;border-bottom:5px solid gold}
+h1{font-size:56px;margin:0}
+.tagline{background:white;color:#061226;display:inline-block;margin-top:18px;padding:14px 22px;border-radius:22px;font-weight:bold;font-size:24px}
+.nav{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;padding:15px;background:#061226}
+.nav a{background:gold;color:#061226;padding:10px 15px;border-radius:20px;font-weight:bold;box-shadow:0 0 15px gold}
+.container{max-width:1100px;margin:auto;padding:20px}
+.photos{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.photo{height:230px;border-radius:20px;background-size:cover;background-position:center;position:relative;overflow:hidden;box-shadow:0 0 25px orange}
+.photo:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.photo h3{position:absolute;bottom:15px;left:15px;z-index:2}
+.burger{background-image:url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80')}
+.tacos{background-image:url('https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&w=900&q=80')}
+.wings{background-image:url('https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=900&q=80')}
+.fries{background-image:url('https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=900&q=80')}
+.mac{background-image:url('https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80')}
+.philly{background-image:url('https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=900&q=80')}
+.section{background:white;color:#061226;border-radius:24px;padding:22px;margin:22px 0}
+.section h2{background:#081a3a;color:gold;padding:14px 18px;border-radius:18px}
+.item{background:#fffaf0;border:2px solid #eee;border-radius:18px;padding:16px;margin:12px 0}
+.row{display:flex;justify-content:space-between;gap:15px}
+.price{background:gold;color:#061226;padding:7px 13px;border-radius:20px;font-weight:bold}
+.desc{color:#475569;font-weight:bold}
+.contact{text-align:center;background:#061226;color:white;padding:25px;border-radius:25px;border:3px solid gold}
+footer{text-align:center;padding:25px;color:#bfdbfe}
+@media(max-width:800px){h1{font-size:42px}.photos{grid-template-columns:1fr}.row{flex-direction:column}}
+</style>
 </head>
 
-<body style="margin:0;font-family:Arial;background:#061226;color:white;text-align:center;">
+<body>
 
-<div style="padding:40px;background:#081a3a;border-bottom:4px solid gold;">
+<div class="hero">
 <h1>🔥 Chef Daddy Ray's</h1>
-<p style="font-size:20px;font-weight:bold;">Life is too short for boring food.</p>
+<div class="tagline">“Life is too short for boring food.”</div>
+<p>Burgers • Tacos • Wings • Loaded Fries • Philly Cheesesteaks • Mac & Cheese • Sauces</p>
 </div>
 
-<div style="padding:20px;">
+<div class="nav">
+<a href="#photos">Photos</a>
+<a href="#combos">Combos</a>
+<a href="#family">Family Favorites</a>
+<a href="#sides">Sides</a>
+<a href="#contact">Contact</a>
+</div>
+
+<div class="container">
+
+<div id="photos" class="photos">
+<div class="photo burger"><h3>Chorizo Burger</h3></div>
+<div class="photo tacos"><h3>Kylee's Tacos</h3></div>
+<div class="photo wings"><h3>Aubrie's Wings</h3></div>
+<div class="photo fries"><h3>Loaded Fries</h3></div>
+<div class="photo mac"><h3>Mac & Cheese</h3></div>
+<div class="photo philly"><h3>Philly Cheesesteak</h3></div>
+</div>
+
+<div id="combos" class="section">
 <h2>Combos</h2>
-<p>Philly Cheesesteak Combo – $18</p>
-<p>Chorizo Burger Combo – $17</p>
-<p>BBQ Chicken Sliders – $16</p>
-<p>Wings Combo – $18</p>
+<div class="item"><div class="row"><h3>Philly Cheesesteak Combo</h3><span class="price">$18</span></div><p class="desc">Steak, peppers, onions, melted cheese, toasted roll. Served with fries and a drink.</p></div>
+<div class="item"><div class="row"><h3>Chorizo Burger Combo</h3><span class="price">$17</span></div><p class="desc">Juicy burger topped with seasoned chorizo and melted cheese.</p></div>
+<div class="item"><div class="row"><h3>BBQ Chicken Sliders Combo</h3><span class="price">$16</span></div><p class="desc">Tender BBQ chicken sliders with your choice of BBQ sauce.</p></div>
+<div class="item"><div class="row"><h3>Aubrie's Wings Combo</h3><span class="price">$18</span></div><p class="desc">Crispy wings tossed in your choice of sauce.</p></div>
 </div>
 
-<div style="padding:20px;">
-<h2>Favorites</h2>
-<p>Kylee's Tacos</p>
-<p>Kinsley's Mac & Cheese</p>
-<p>Paytyn's Loaded Fries</p>
+<div id="family" class="section">
+<h2>Family Favorites</h2>
+<div class="item"><div class="row"><h3>Kylee's Chicken Tacos</h3><span class="price">$10</span></div><p class="desc">Chicken tacos with onion, cilantro, and bold Chef Daddy flavor.</p></div>
+<div class="item"><div class="row"><h3>Kylee's Steak Tacos</h3><span class="price">$13</span></div><p class="desc">Steak tacos with onion, cilantro, and bold Chef Daddy flavor.</p></div>
+<div class="item"><div class="row"><h3>Kinsley's Mac & Cheese</h3><span class="price">$10</span></div><p class="desc">Double loaded mac with your choice of protein and sauce drizzle. Add chicken +$3 or steak +$4.</p></div>
+<div class="item"><div class="row"><h3>Paytyn's Loaded Fries</h3><span class="price">$10</span></div><p class="desc">Loaded fries with jalapeño cheese sauce and bacon.</p></div>
 </div>
 
-<div style="padding:20px;">
-<h2>Contact</h2>
-<p>@chefdaddyrays</p>
-<p>Las Vegas, NV</p>
+<div id="sides" class="section">
+<h2>Sides & Sweets</h2>
+<div class="item"><div class="row"><h3>Fried Pickles & Jalapeños</h3><span class="price">$8</span></div><p class="desc">Crispy, tangy, spicy, and perfect for dipping.</p></div>
+<div class="item"><div class="row"><h3>Fries</h3><span class="price">Side</span></div></div>
+<div class="item"><div class="row"><h3>Jalapeño Cheese Sauce</h3><span class="price">+$2</span></div></div>
+<div class="item"><div class="row"><h3>Cake Pops</h3><span class="price">2 for $5</span></div></div>
+<div class="item"><div class="row"><h3>BBQ Sauce Bottle</h3><span class="price">$12</span></div></div>
 </div>
+
+<div class="section">
+<h2>Sauces</h2>
+<p><b>Original BBQ • Honey BBQ • Smoked BBQ • Buffalo • Blazing Devil Spit • Garlic Parm • Ranch • Daddy Sauce</b></p>
+</div>
+
+<div id="contact" class="contact">
+<h2>Book, Follow & Eat</h2>
+<p>Email: chefdaddysrays@gmail.com</p>
+<p>Instagram: @chefdaddyrays</p>
+<p>Facebook: Chef Daddy Ray's</p>
+<p>Las Vegas, Nevada</p>
+</div>
+
+</div>
+
+<footer>© 2026 Chef Daddy Ray's Food Truck</footer>
 
 </body>
 </html>
