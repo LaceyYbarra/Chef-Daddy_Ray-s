@@ -1,118 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chef Daddy Ray's</title>
+<title>Chef Daddy Ray's Menu</title>
 
 <style>
 body {
   margin: 0;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   background: #061226;
   color: white;
-  text-align: center;
 }
 
 .hero {
-  padding: 50px 20px;
-  background: #081a3a;
+  text-align: center;
+  padding: 30px 15px;
+  background: linear-gradient(#061226, #081a3a);
   border-bottom: 5px solid gold;
 }
 
-h1 {
-  font-size: 52px;
+.hero h1 {
+  font-size: 48px;
   margin: 0;
 }
 
-.tagline {
-  background: white;
-  color: #061226;
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 20px;
-  border-radius: 20px;
+.hero p {
+  color: gold;
   font-weight: bold;
-  font-size: 22px;
+  font-size: 18px;
 }
 
-.nav {
-  padding: 15px;
-  background: #061226;
+.menu-wrap {
+  width: 96%;
+  max-width: 1200px;
+  margin: 25px auto;
+  padding: 8px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, gold, orange, red, #0b3f91);
+  box-shadow: 0 0 35px orange;
 }
 
-.nav a {
+.menu-board {
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+}
+
+.buttons a {
   background: gold;
   color: #061226;
-  padding: 10px 15px;
-  margin: 5px;
-  border-radius: 20px;
+  padding: 14px 20px;
+  border-radius: 25px;
   font-weight: bold;
   text-decoration: none;
-}
-
-.section {
-  background: white;
-  color: #061226;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px;
-}
-
-.section h2 {
-  background: #081a3a;
-  color: gold;
-  padding: 10px;
-  border-radius: 15px;
-}
-
-.item {
-  background: #fffaf0;
-  border: 2px solid #eee;
-  border-radius: 18px;
-  padding: 15px;
-  margin: 12px 0;
-  transition: transform 0.2s ease;
-}
-
-.item:hover {
-  transform: scale(1.02);
-}
-
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.price {
-  background: gold;
-  color: #061226;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-weight: bold;
-  box-shadow: 0 0 10px gold;
-}
-
-.desc {
-  color: #444;
-  font-weight: bold;
-  margin-top: 8px;
-}
-
-.badge {
-  display: inline-block;
-  margin-top: 10px;
-  background: red;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-size: 12px;
+  box-shadow: 0 0 15px gold;
 }
 
 .contact {
-  background: #061226;
+  text-align: center;
   padding: 25px;
-  border-top: 5px solid gold;
+  margin: 20px;
+  border: 3px solid gold;
+  border-radius: 20px;
+  background: #081a3a;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: gold;
+  font-weight: bold;
+}
+
+@media(max-width: 700px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .menu-wrap {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .menu-board {
+    border-radius: 0;
+  }
 }
 </style>
 </head>
@@ -120,107 +101,30 @@ h1 {
 <body>
 
 <div class="hero">
-<h1>🔥 Chef Daddy Ray's</h1>
-<div class="tagline">Life is too short for boring food.</div>
+  <h1>🔥 Chef Daddy Ray's</h1>
+  <p>Life is too short for boring food.</p>
 </div>
 
-<div class="nav">
-<a href="#combos">Combos</a>
-<a href="#family">Favorites</a>
-<a href="#sides">Sides</a>
-<a href="#contact">Contact</a>
+<div class="menu-wrap">
+  <img class="menu-board" src="menu.png" alt="Chef Daddy Ray's Menu">
 </div>
 
-<div id="combos" class="section">
-<h2>🔥 Combo Meals</h2>
-
-<div class="item">
-<div class="row">
-<h3>Philly Cheesesteak Combo</h3>
-<span class="price">$18</span>
+<div class="buttons">
+  <a href="mailto:chefdaddysrays@gmail.com">Email Us</a>
+  <a href="#contact">Contact Info</a>
 </div>
-<p class="desc">Steak, peppers, onions, melted cheese. Served with fries and a drink.</p>
-<span class="badge">Best Seller</span>
-</div>
-
-<div class="item">
-<div class="row">
-<h3>Aubrie’s Wings Combo</h3>
-<span class="price">$18</span>
-</div>
-<p class="desc">Crispy wings tossed in your choice of sauce.</p>
-</div>
-
-<div class="item">
-<div class="row">
-<h3>Chorizo Burger Combo</h3>
-<span class="price">$17</span>
-</div>
-<p class="desc">Juicy burger topped with seasoned chorizo.</p>
-</div>
-
-</div>
-
-
-<div id="family" class="section">
-<h2>🔥 Family Favorites</h2>
-
-<div class="item">
-<div class="row">
-<h3>Kylee’s Chicken Tacos</h3>
-<span class="price">$10</span>
-</div>
-</div>
-
-<div class="item">
-<div class="row">
-<h3>Kinsley’s Mac & Cheese</h3>
-<span class="price">$10</span>
-</div>
-<p class="desc">Loaded mac with bacon. Add chicken or steak.</p>
-</div>
-
-<div class="item">
-<div class="row">
-<h3>Paytyn’s Loaded Fries</h3>
-<span class="price">$10</span>
-</div>
-</div>
-
-</div>
-
-
-<div id="sides" class="section">
-<h2>🍟 Sides & Shareables</h2>
-
-<div class="item">
-<div class="row">
-<h3>Fried Pickles & Jalapeños</h3>
-<span class="price">$10</span>
-</div>
-</div>
-
-<div class="item">
-<div class="row">
-<h3>Mozzarella Sticks</h3>
-</div>
-</div>
-
-<div class="item">
-<div class="row">
-<h3>Cheese Sauce</h3>
-<span class="price">$2</span>
-</div>
-</div>
-
-</div>
-
 
 <div id="contact" class="contact">
-<h2>📲 Contact</h2>
-<p>@chefdaddyrays</p>
-<p>Las Vegas, NV</p>
+  <h2>Book, Follow & Eat</h2>
+  <p>Email: chefdaddysrays@gmail.com</p>
+  <p>Instagram: @chefdaddyrays</p>
+  <p>Facebook: Chef Daddy Ray's</p>
+  <p>Las Vegas, Nevada</p>
 </div>
+
+<footer>
+  © 2026 Chef Daddy Ray's Food Truck
+</footer>
 
 </body>
 </html>
