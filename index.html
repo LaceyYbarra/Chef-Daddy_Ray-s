@@ -36,21 +36,41 @@ h1 {
   font-weight: bold;
 }
 
-.feature {
-  max-width: 900px;
-  margin: 20px auto;
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
 }
 
-.feature img {
-  width: 100%;
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+}
+
+.photo {
+  height: 230px;
   border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
   box-shadow: 0 0 25px orange;
+}
+
+.photo h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  background: rgba(0,0,0,.75);
+  color: gold;
 }
 
 .section {
   background: white;
   color: #061226;
-  margin: 20px;
+  margin: 20px 0;
   padding: 20px;
   border-radius: 20px;
 }
@@ -69,14 +89,14 @@ h1 {
   border-radius: 12px;
 }
 
-.item p {
-  margin: 6px 0 0;
-  color: #444;
+.price {
+  float: right;
   font-weight: bold;
 }
 
-.price {
-  float: right;
+.desc {
+  margin-top: 6px;
+  color: #444;
   font-weight: bold;
 }
 
@@ -95,9 +115,34 @@ h1 {
 <div class="tagline">Life is too short for boring food.</div>
 </div>
 
-<!-- FEATURED IMAGE (ONLY ONE STRONG PHOTO) -->
-<div class="feature">
-<img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=1200&q=80">
+<div class="container">
+
+<div class="photos">
+
+<div class="photo" style="background-image:url('https://images.unsplash.com/photo-1613514785940-daed07799d9b?auto=format&fit=crop&w=900&q=80')">
+<h3>Street Tacos</h3>
+</div>
+
+<div class="photo" style="background-image:url('https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=900&q=80')">
+<h3>Aubrie’s Wings</h3>
+</div>
+
+<div class="photo" style="background-image:url('https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=900&q=80')">
+<h3>Loaded Fries</h3>
+</div>
+
+<div class="photo" style="background-image:url('https://images.unsplash.com/photo-1543339494-b4cd4f7ba686?auto=format&fit=crop&w=900&q=80')">
+<h3>Mac & Cheese</h3>
+</div>
+
+<div class="photo" style="background-image:url('pickles.jpg')">
+<h3>Fried Pickles & Jalapeños</h3>
+</div>
+
+<div class="photo" style="background-image:url('dessert.jpg')">
+<h3>Peanut Butter Pie</h3>
+</div>
+
 </div>
 
 <div class="section">
@@ -105,12 +150,12 @@ h1 {
 
 <div class="item">
 Philly Cheesesteak Combo <span class="price">$17</span>
-<p>Steak, peppers, onions, melted cheese. Served with fries.</p>
+<div class="desc">Steak, peppers, onions, melted cheese. Served with fries.</div>
 </div>
 
 <div class="item">
 Aubrie’s Wings Combo <span class="price">$18</span>
-<p>Served with fries. Sauce options: Buffalo, Garlic Parm, BBQ, Honey BBQ, Smoked BBQ.</p>
+<div class="desc">Wings + fries. Sauces: Buffalo, Garlic Parm, BBQ, Honey BBQ, Smoked BBQ.</div>
 </div>
 
 <div class="item">
@@ -126,76 +171,37 @@ BBQ Chicken Sliders Combo <span class="price">$16</span>
 <div class="section">
 <h2>🍔 Main Items</h2>
 
-<div class="item">
-Philly Cheesesteak <span class="price">$13</span>
-<p>Classic steak sandwich with melted cheese.</p>
-</div>
-
-<div class="item">
-Breakfast Burrito <span class="price">$10</span>
-</div>
-
-<div class="item">
-Chorizo Burger <span class="price">$12</span>
-</div>
-
-<div class="item">
-BBQ Chicken Sliders <span class="price">$12</span>
-</div>
+<div class="item">Philly Cheesesteak <span class="price">$13</span></div>
+<div class="item">Breakfast Burrito <span class="price">$10</span></div>
+<div class="item">Chorizo Burger <span class="price">$12</span></div>
+<div class="item">BBQ Chicken Sliders <span class="price">$12</span></div>
 
 </div>
 
 <div class="section">
 <h2>🔥 Family Favorites</h2>
 
-<div class="item">
-Kylee’s Tacos (3) <span class="price">$10 / $13</span>
-<p>Street tacos with onion & cilantro</p>
-</div>
-
-<div class="item">
-Aubrie’s Wings <span class="price">$14</span>
-</div>
-
-<div class="item">
-Kinsley’s Mac & Cheese Bacon <span class="price">$10</span>
-<p>Loaded mac with bacon</p>
-</div>
-
-<div class="item">
-Paytyn’s Loaded Fries <span class="price">$10</span>
-<p>Jalapeño cheese sauce + bacon</p>
-</div>
+<div class="item">Kylee’s Tacos (3) <span class="price">$10 / $13</span></div>
+<div class="item">Aubrie’s Wings <span class="price">$14</span></div>
+<div class="item">Kinsley’s Mac & Cheese <span class="price">$10</span></div>
+<div class="item">Paytyn’s Loaded Fries <span class="price">$10</span></div>
 
 </div>
 
 <div class="section">
 <h2>🍟 Sides</h2>
 
-<div class="item">
-Fried Pickles & Jalapeños <span class="price">$8</span>
-</div>
-
-<div class="item">
-Mozzarella Sticks <span class="price">$8</span>
-</div>
-
-<div class="item">
-Jalapeño Cheese Sauce <span class="price">$2</span>
-</div>
+<div class="item">Fried Pickles & Jalapeños <span class="price">$8</span></div>
+<div class="item">Mozzarella Sticks <span class="price">$8</span></div>
+<div class="item">Jalapeño Cheese Sauce <span class="price">$2</span></div>
 
 </div>
 
 <div class="section">
 <h2>🍰 Desserts</h2>
 
-<div class="item">
-Peanut Butter Pie Squares <span class="price">$8</span>
-</div>
-
-<div class="item">
-Fried Oreos <span class="price">$8</span>
-</div>
+<div class="item">Peanut Butter Pie Squares <span class="price">$8</span></div>
+<div class="item">Fried Oreos <span class="price">$8</span></div>
 
 </div>
 
@@ -203,6 +209,8 @@ Fried Oreos <span class="price">$8</span>
 <h2>🔥 Sauces</h2>
 <p><b>Chipotle • Ranch • BBQ • Honey BBQ • Smoked BBQ • Buffalo • Garlic Parm • Daddy Sauce</b></p>
 <p><b>BBQ Sauce Bottles – $12</b></p>
+</div>
+
 </div>
 
 <div class="contact">
