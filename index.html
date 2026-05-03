@@ -55,14 +55,16 @@ h1 {
   background-position: center;
   position: relative;
   box-shadow: 0 0 25px orange;
+  overflow: hidden;
 }
 
 .photo h3 {
   position: absolute;
   bottom: 0;
+  left: 0;
+  right: 0;
   margin: 0;
   padding: 10px;
-  width: 100%;
   background: rgba(0,0,0,.75);
   color: gold;
 }
@@ -105,6 +107,11 @@ h1 {
   padding: 25px;
   border-top: 4px solid gold;
 }
+
+@media(max-width:700px){
+  .photos{grid-template-columns:1fr}
+  h1{font-size:38px}
+}
 </style>
 </head>
 
@@ -135,12 +142,12 @@ h1 {
 <h3>Mac & Cheese</h3>
 </div>
 
-<div class="photo" style="background-image:url('pickles.jpg')">
+<div class="photo" style="background-image:url('pickles.jpg.jpeg')">
 <h3>Fried Pickles & Jalapeños</h3>
 </div>
 
-<div class="photo" style="background-image:url('dessert.jpg')">
-<h3>Peanut Butter Pie</h3>
+<div class="photo" style="background-image:url('dessert.jpg.jpeg')">
+<h3>Peanut Butter Pie Squares</h3>
 </div>
 
 </div>
@@ -215,7 +222,8 @@ BBQ Chicken Sliders Combo <span class="price">$16</span>
 
 <div class="contact">
 <h2>Contact</h2>
-<p>@chefdaddyrays</p>
+<p>Email: chefdaddysrays@gmail.com</p>
+<p>Instagram: @chefdaddyrays</p>
 <p>Las Vegas, NV</p>
 </div>
 
