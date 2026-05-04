@@ -7,20 +7,112 @@
 <title>Chef Daddy Ray's</title>
 
 <style>
-body { margin:0; font-family:Arial; background:linear-gradient(135deg,#020617,#061226,#081a3a); color:white;}
-.hero {text-align:center; padding:50px 20px; border-bottom:4px solid gold;}
-.logo {width:200px; max-width:80%; filter:drop-shadow(0 0 25px gold);}
-.container {max-width:1100px; margin:auto; padding:20px;}
-.photos {display:grid; grid-template-columns:repeat(2,1fr); gap:15px;}
-.photo {height:240px; border-radius:20px; background-size:cover; background-position:center; position:relative; box-shadow:0 0 25px orange;}
-.photo h3 {position:absolute; bottom:0; margin:0; padding:12px; width:100%; background:rgba(0,0,0,.75); color:gold;}
-.section {background:white; color:#061226; margin:20px 0; padding:20px; border-radius:20px;}
-.section h2 {background:#081a3a; color:gold; padding:10px; border-radius:15px;}
-.item {margin:12px 0; padding:14px; background:#fffaf0; border-radius:12px;}
-.price {float:right; font-weight:bold;}
-.desc {margin-top:6px; color:#444; font-weight:bold; line-height:1.4;}
-.contact {text-align:center; padding:25px; border-top:4px solid gold;}
-@media(max-width:700px){.photos{grid-template-columns:1fr}}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg,#020617,#061226,#081a3a);
+  color: white;
+}
+
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  border-bottom: 4px solid gold;
+}
+
+.logo {
+  width: 200px;
+  max-width: 80%;
+  filter: drop-shadow(0 0 25px gold);
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+}
+
+.photo {
+  height: 240px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  box-shadow: 0 0 25px orange;
+  overflow: hidden;
+}
+
+.photo h3 {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 12px;
+  width: 100%;
+  background: rgba(0,0,0,.75);
+  color: gold;
+  font-size: 18px;
+}
+
+.section {
+  background: white;
+  color: #061226;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.section h2 {
+  background: #081a3a;
+  color: gold;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.item {
+  margin: 12px 0;
+  padding: 14px;
+  background: #fffaf0;
+  border-radius: 12px;
+  color: #061226;
+}
+
+.item-title {
+  font-weight: bold;
+}
+
+.price {
+  float: right;
+  font-weight: bold;
+}
+
+.desc {
+  margin-top: 6px;
+  color: #444;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.note {
+  color: #444;
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+.contact {
+  text-align: center;
+  padding: 25px;
+  border-top: 4px solid gold;
+}
+
+@media(max-width:700px){
+  .photos{grid-template-columns:1fr}
+}
 </style>
 </head>
 
@@ -33,43 +125,59 @@ body { margin:0; font-family:Arial; background:linear-gradient(135deg,#020617,#0
 <div class="container">
 
 <div class="photos">
-<div class="photo" style="background-image:url('tacos.jpg')"><h3>Kylee’s Street Tacos</h3></div>
-<div class="photo" style="background-image:url('wingsandfries.jpg')"><h3>Aubrie’s Wings + Fries</h3></div>
-<div class="photo" style="background-image:url('loadedfries.jpg')"><h3>Loaded Fries</h3></div>
-<div class="photo" style="background-image:url('loadedmac.jpg')"><h3>Loaded Mac & Cheese</h3></div>
-<div class="photo" style="background-image:url('phillycheesesteak.jpg')"><h3>Philly Cheesesteak</h3></div>
-<div class="photo" style="background-image:url('pickles.jpg.jpeg')"><h3>Fried Pickles</h3></div>
-<div class="photo" style="background-image:url('dessert.jpg.jpeg')"><h3>Peanut Butter Pie</h3></div>
+
+<div class="photo" style="background-image:url('tacos.jpg')">
+<h3>Kylee’s Street Tacos</h3>
+</div>
+
+<div class="photo" style="background-image:url('wingsandfries.jpg')">
+<h3>Aubrie’s Wings + Fries</h3>
+</div>
+
+<div class="photo" style="background-image:url('loadedfries.jpg')">
+<h3>Loaded Fries</h3>
+</div>
+
+<div class="photo" style="background-image:url('loadedmac.jpg')">
+<h3>Loaded Mac & Cheese</h3>
+</div>
+
+<div class="photo" style="background-image:url('phillycheesesteak.jpg')">
+<h3>Philly Cheesesteak</h3>
+</div>
+
+<div class="photo" style="background-image:url('pickles.jpg.jpeg')">
+<h3>Fried Pickles</h3>
+</div>
+
+<div class="photo" style="background-image:url('dessert.jpg.jpeg')">
+<h3>Peanut Butter Pie</h3>
+</div>
+
 </div>
 
 <div class="section">
 <h2>🔥 Combo Meals</h2>
-<p><b>All combo meals come with fries and a drink. Substitute fries for fried pickles & jalapeños +$3</b></p>
+<p class="note">All combo meals come with fries and a drink. Substitute fries for fried pickles & jalapeños +$3</p>
 
 <div class="item">
-Philly Cheesesteak Combo <span class="price">$17</span>
-<div class="desc">
-Steak, onions, peppers, provolone cheese, arugula, Daddy Sauce, tomato, red onion, and Chef Dad’s homemade pickles.  
-Add jalapeño cheese sauce +$2.
-</div>
+<span class="item-title">Philly Cheesesteak Combo</span> <span class="price">$17</span>
+<div class="desc">Steak, provolone cheese, grilled onions, grilled peppers. Add jalapeño cheese sauce +$2.</div>
 </div>
 
 <div class="item">
-Aubrie’s Wings Combo <span class="price">$18</span>
-<div class="desc">
-Wings + fries. Sauce options: Buffalo, Blazing Devil Spit, Garlic Parm, Original BBQ, Honey BBQ, Smoked BBQ, Daddy Sauce.
-</div>
+<span class="item-title">Aubrie’s Wings Combo</span> <span class="price">$18</span>
+<div class="desc">Wings + fries. Sauce options: Buffalo, Blazing Devil Spit, Garlic Parm, Original BBQ, Honey BBQ, Smoked BBQ, Daddy Sauce.</div>
 </div>
 
 <div class="item">
-Chorizo Burger Combo <span class="price">$17</span>
+<span class="item-title">Chorizo Burger Combo</span> <span class="price">$17</span>
+<div class="desc">Beef and chorizo patty, provolone cheese, arugula, Daddy Sauce, tomato, onion, and Chef Daddy’s homemade pickles.</div>
 </div>
 
 <div class="item">
-BBQ Chicken Sliders Combo <span class="price">$16</span>
-<div class="desc">
-Shredded BBQ chicken, your choice of BBQ sauce, grilled onions, and Chef Dad’s homemade pickles.
-</div>
+<span class="item-title">BBQ Chicken Sliders Combo</span> <span class="price">$16</span>
+<div class="desc">Shredded BBQ chicken, your choice of BBQ sauce, grilled onions, and Chef Daddy’s homemade pickles.</div>
 </div>
 
 </div>
@@ -78,20 +186,23 @@ Shredded BBQ chicken, your choice of BBQ sauce, grilled onions, and Chef Dad’s
 <h2>🍔 Main Items</h2>
 
 <div class="item">
-Philly Cheesesteak <span class="price">$13</span>
-<div class="desc">
-Steak, onions, peppers, provolone cheese, arugula, Daddy Sauce, tomato, red onion, and Chef Dad’s homemade pickles.
+<span class="item-title">Philly Cheesesteak</span> <span class="price">$13</span>
+<div class="desc">Steak, provolone cheese, grilled onions, grilled peppers. Add jalapeño cheese sauce +$2.</div>
 </div>
-</div>
-
-<div class="item">Breakfast Burrito <span class="price">$10</span></div>
-<div class="item">Chorizo Burger <span class="price">$12</span></div>
 
 <div class="item">
-BBQ Chicken Sliders <span class="price">$12</span>
-<div class="desc">
-Shredded BBQ chicken, your choice of BBQ sauce, grilled onions, and Chef Dad’s homemade pickles.
+<span class="item-title">Breakfast Burrito</span> <span class="price">$10</span>
+<div class="desc">Shredded chicken, turkey sausage, chorizo, potato, shredded cheese, bell peppers, onion, and jalapeño.</div>
 </div>
+
+<div class="item">
+<span class="item-title">Chorizo Burger</span> <span class="price">$12</span>
+<div class="desc">Beef and chorizo patty, provolone cheese, arugula, Daddy Sauce, tomato, onion, and Chef Daddy’s homemade pickles.</div>
+</div>
+
+<div class="item">
+<span class="item-title">BBQ Chicken Sliders</span> <span class="price">$12</span>
+<div class="desc">Shredded BBQ chicken, your choice of BBQ sauce, grilled onions, and Chef Daddy’s homemade pickles.</div>
 </div>
 
 </div>
@@ -99,34 +210,65 @@ Shredded BBQ chicken, your choice of BBQ sauce, grilled onions, and Chef Dad’s
 <div class="section">
 <h2>🔥 Family Favorites</h2>
 
-<div class="item">Kylee’s Tacos (3) <span class="price">$10 / $13</span></div>
-<div class="item">Aubrie’s Wings <span class="price">$14</span></div>
-<div class="item">Kinsley’s Mac & Cheese <span class="price">$10</span></div>
-<div class="item">Paytyn’s Loaded Fries <span class="price">$10</span></div>
+<div class="item">
+<span class="item-title">Kylee’s Tacos</span> <span class="price">Chicken $10 / Steak $13</span>
+<div class="desc">Marinated meat, cilantro lime sour cream, and fresh pico.</div>
+</div>
+
+<div class="item">
+<span class="item-title">Aubrie’s Wings</span> <span class="price">$14</span>
+<div class="desc">Sauce options: Buffalo, Blazing Devil Spit, Garlic Parm, Original BBQ, Honey BBQ, Smoked BBQ, Daddy Sauce.</div>
+</div>
+
+<div class="item">
+<span class="item-title">Kinsley’s Mac & Cheese</span> <span class="price">$10</span>
+<div class="desc">Extra creamy mac topped with bacon. Add chicken +$3 or steak +$4 and a sauce drizzle of your choice.</div>
+</div>
+
+<div class="item">
+<span class="item-title">Paytyn’s Loaded Fries</span> <span class="price">$10</span>
+<div class="desc">Fries with jalapeño cheese sauce. Add chicken +$3 or steak +$4 and a sauce drizzle of your choice.</div>
+</div>
 
 </div>
 
 <div class="section">
 <h2>🍟 Sides</h2>
 
-<div class="item">Fried Pickles & Jalapeños <span class="price">$8</span></div>
-<div class="item">Mozzarella Sticks <span class="price">$8</span></div>
-<div class="item">Jalapeño Cheese Sauce <span class="price">$2</span></div>
+<div class="item">
+<span class="item-title">Fried Pickles & Jalapeños</span> <span class="price">$8</span>
+<div class="desc">Served with ranch and chipotle ranch.</div>
+</div>
+
+<div class="item">
+<span class="item-title">Mozzarella Sticks</span> <span class="price">$8</span>
+<div class="desc">Served with marinara.</div>
+</div>
+
+<div class="item">
+<span class="item-title">Jalapeño Cheese Sauce</span> <span class="price">$2</span>
+<div class="desc">House-made creamy jalapeño cheese sauce.</div>
+</div>
 
 </div>
 
 <div class="section">
 <h2>🍰 Desserts</h2>
 
-<div class="item">Peanut Butter Pie Squares <span class="price">$8</span></div>
-<div class="item">Fried Oreos <span class="price">$8</span></div>
+<div class="item">
+<span class="item-title">Peanut Butter Pie Squares</span> <span class="price">$8</span>
+</div>
+
+<div class="item">
+<span class="item-title">Fried Oreos</span> <span class="price">$8</span>
+</div>
 
 </div>
 
 <div class="section">
 <h2>🔥 Sauces</h2>
-<p><b>Chipotle • Ranch • Original BBQ • Honey BBQ • Smoked BBQ • Buffalo • Blazing Devil Spit • Garlic Parm • Daddy Sauce</b></p>
-<p><b>BBQ Sauce Bottles – $12</b></p>
+<p class="note">Chipotle • Ranch • Original BBQ • Honey BBQ • Smoked BBQ • Buffalo • Blazing Devil Spit • Garlic Parm • Daddy Sauce</p>
+<p class="note">BBQ Sauce Bottles – $12</p>
 </div>
 
 </div>
